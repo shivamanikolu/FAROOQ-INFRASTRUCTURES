@@ -76,3 +76,15 @@
     @apply font-serif;
   }
 }
+
+/* Editorial image hover animation and grayscale only on devices that support hover (desktops/laptops) */
+@media (hover: hover) {
+  .editorial-image-zoom {
+    filter: grayscale(100%);
+  }
+  .group:hover .editorial-image-zoom {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+}
+

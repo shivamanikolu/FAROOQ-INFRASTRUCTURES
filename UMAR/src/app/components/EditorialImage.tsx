@@ -36,7 +36,7 @@ export function EditorialImage({
         loading={loading}
         {...({ fetchpriority: fetchPriority } as any)} // forward to img element correctly in standard React
         className={cn(
-          "w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[1500ms] ease-out",
+          "w-full h-full transition-all duration-[1500ms] ease-out editorial-image-zoom",
           objectFit === "contain" ? "object-contain bg-[#F5F4F0]" : "object-cover"
         )}
       />
